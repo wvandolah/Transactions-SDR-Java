@@ -14,6 +14,7 @@ public class Transaction {
     private Person person;
     private String description;
     private double amount;
+    private long date;
 
 //    This was used to expose the id
 //    @JsonProperty("id")
@@ -46,5 +47,13 @@ public class Transaction {
 
     public void setAmount(double amount) {
         this.amount = amount;
+    }
+
+    public long getDate() {
+        return date;
+    }
+
+    public void setDate(long date) {
+        this.date = date;
     }
 }
