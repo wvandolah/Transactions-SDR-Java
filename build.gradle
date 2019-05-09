@@ -17,8 +17,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.data:spring-data-rest-hal-browser'
+	implementation 'org.postgresql:postgresql'
 	runtimeOnly 'com.h2database:h2'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	// https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-stream-rabbit
-	compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-stream-rabbit', version: '2.1.2.RELEASE'
+
 }

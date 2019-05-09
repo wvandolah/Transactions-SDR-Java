@@ -1,25 +1,13 @@
 spring:
+  jpa:
+    database: postgresql
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
   datasource:
     url: ${JDBC_DATABASE_URL}
     username: ${JDBC_DATABASE_USERNAME}
     password: ${JDBC_DATABASE_PASSWORD}
+    driver-class-name: org.postgresql.Driver
 
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
-
-  cloud:
-    stream:
-      bindings:
-        input:
-          destination: foodOrders
-          group: foodOrdersIntake
-  h2:
-    console:
-      enabled: true
-      path: /h2-console
-
-server:
-  port: 9000
