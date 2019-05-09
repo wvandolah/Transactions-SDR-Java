@@ -1,1 +1,0 @@
-INSERT into person (id, name) values (1, 'william' );
