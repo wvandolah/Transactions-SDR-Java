@@ -4,7 +4,7 @@ import org.springframework.data.rest.core.config.Projection;
 
 @Projection(name = "transactionProjection" , types = Transaction.class)
 public interface TransactionProjection {
-    Person getPerson();
+//    Person getPerson();
     String getDescription();
     double getAmount();
     long getDate();
